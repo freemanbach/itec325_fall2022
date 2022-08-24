@@ -1,0 +1,23 @@
+
+# DUE : Friday 26th August 9pm.
+# I will demo git on Friday
+# and get your env functional
+
+
+Write a Simple PHP  CLI app to prompt a User on the Following Items:
+
+-- First Name
+-- Last Name
+-- Age 
+-- DOB
+-- Country of Origin
+
+Once done, you must then search for a method to set the Default TimeZone to EST which is America/New_York and Finally
+show timestamp using time() and date(). Once you have printed each of the user input back to the User.
+
+Must use one of the Following statements to print out the data to the PROMPT:
+echo, echo(), print(), printf(), springf() 
+
+Check in your file to Github as: 
+flo_lab1.php
+YourUserName_lab1.php
