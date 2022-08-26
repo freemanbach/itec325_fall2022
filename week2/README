@@ -1,0 +1,33 @@
+# DUE : Friday 2nd September 9pm.
+# I will demo git on Friday and get your env functional
+
+INSTRUCTIONS on using GITHUB as a Class:
+1) git clone git@github.com:freemanbach/itec325_fall2022.git
+2) git pull  <-- this command is to update changes from remote repo to your local repo first
+3) In your local machine:
+3a) git add username_lab1.php
+3b) git commit -m "Your comments on this upload file to github"
+3c) git push
+
+
+Write rewrite my SpecialLotto.java into  PHP CLI app.
+
+Transform this SpecialLotto.java file into SpecialLotto.php. 
+Dont use Collection such as List. 
+Simply write a loop to randomly pull integer values and concartnate together into a string variable.
+the first number of Mega-Million  range in 1-70, Special Powerball is 1-25
+Each of the integer values must be chanined together into of type string with a space.
+
+# yes, you are not day-dreaming ! This is odd, it is not + to concartnate, it is . !
+# php concartnation: https://www.php.net/manual/en/language.operators.string.php
+balls.= " " . value; 
+
+
+Good luck !
+
+Must use one of the Following statements to print out the data to the PROMPT:
+echo, echo(), print(), printf(), springf() 
+
+Check in your file to Github as: 
+flo_lab2.php
+YourUserName_lab2.php
