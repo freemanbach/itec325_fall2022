@@ -19,7 +19,7 @@
 * To execute any PHP script as a CLI, you can run `php filename.php`
 *
 * @Author Angel Diaz-Soriano 
-* @Date   Give it a date YYYY.MM.DD 2022.08.26
+* @Date   2022.08.26
 * @Email  adiazsoriano@radford.edu
 * @Desc   Lab 1 - grabbing input and displaying it.
 */
