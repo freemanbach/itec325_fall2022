@@ -3,6 +3,17 @@
 # I will demo git on Friday
 # and get your env functional
 
+INSTRUCTIONS on using GITHUB as a Class:
+1) git clone git@github.com:freemanbach/itec325_fall2022.git
+2) git pull  <-- this command is to update changes from remote repo to your local repo first
+3) In your local machine:
+3a) git add username_lab1.php
+3b) git commit -m "Your comments on this upload file to github"
+3c) git push
+
+
+
+
 
 Write a Simple PHP  CLI app to prompt a User on the Following Items:
 
