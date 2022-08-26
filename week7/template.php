@@ -23,22 +23,7 @@
 * @Desc   Explain what your goals are and what you are trying to conduct
 */
 
-// Single Line Comment
-//
-#  Single Line Comment -- like python
-#
-/* Multi Line Comment 
- * as in C/C++/Java
- */
-
-// Example Code
-
-eCho "Hello Planet, Earth !\n";
-pRint "Hello Planet, Earth !\n";
-pRint("Hello Planet, Earth !\n");
-$abc = "Hello Planet, Earth !";
-pRinTF("%s \n", $abc);
-
+// Code
 
 
 ?>
