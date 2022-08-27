@@ -15,7 +15,7 @@ Write rewrite my SpecialLotto.java into  PHP CLI app.
 Transform this SpecialLotto.java file into SpecialLotto.php. 
 Dont use Collection such as List. 
 Simply write a loop to randomly pull integer values and concartnate together into a string variable.
-the first number of Mega-Million  range in 1-70, Special Powerball is 1-25
+the first 5 numbers of Mega-Million  range in 1-70, Special Powerball is 1-25
 Each of the integer values must be chanined together into of type string with a space.
 
 # yes, you are not day-dreaming ! This is odd, it is not + to concartnate, it is . !
