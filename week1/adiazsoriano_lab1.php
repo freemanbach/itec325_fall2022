@@ -30,11 +30,18 @@ $age = readline("Enter your age: ");
 $dob = readline("Enter your date of birth: ");
 $coo = readline("Enter your country of origin: ");
 
+//changes from v2
+date_default_timezone_set("America/New_York");
+$date = date("Y-m-d H:i:s");
+$time = time();
+
 
 print("Your first name is " . $first . " and your last name is " . 
                               $last . " and your age is " . 
                               $age . " and your date of birth is " . 
                               $dob . "and your country of origin is " . 
-                              $coo);
+                              $coo . " \n\n Today's date & time is " . 
+                              $date . "\n Current timestamp is " . 
+                              $time);
 
 ?>
