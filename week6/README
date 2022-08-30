@@ -11,6 +11,10 @@ INSTRUCTIONS on using GITHUB as a Class:
 
 
 Write Anything you want and must have some relavant to the content of the week.
+Topic: Create an php Associative Array to parse this file defined_terms.txt to use the Nouns as Keys and use an API to get the definition as Values
+Link: https://dictionaryapi.dev/
+API: https://api.dictionaryapi.dev/api/v2/entries/en/hello
+
 
 Must use one of the Following statements to print out the data to the PROMPT:
 echo, echo(), print(), printf(), springf() 
