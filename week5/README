@@ -11,6 +11,8 @@ INSTRUCTIONS on using GITHUB as a Class:
 
 
 Write Anything you want and must have some relavant to the content of the week.
+-- Topics: show me a case of using an Array in php by populating it with this file called data.txt and randomly printout 30 of them
+-- Topics: 
 
 Must use one of the Following statements to print out the data to the PROMPT:
 echo, echo(), print(), printf(), springf() 
