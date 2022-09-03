@@ -11,6 +11,7 @@ Requirements:
 
 Example:
 
-freeman_script1.php
+freeman_lab1.php
+flo_lab1.php
 
-There will be around 10 to 11 of these simple code assignments.
+There will be exactly 10 of these simple php code assignments.
