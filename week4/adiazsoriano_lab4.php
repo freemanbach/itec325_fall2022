@@ -80,6 +80,8 @@ function drawBellCurve(array $array) {
     echo $xAxis . "\n";
 }
 
+
+//begin
 $numArray = array();
 
 do {
@@ -92,7 +94,7 @@ do {
  
         array_push($numArray, floatval($input));
     }
-} while(strcmp($input,"exit") != 0);
+} while(strcmp(strtolower($input),"exit") != 0);
 
 if(empty($numArray)) {
     array_push($numArray,1);
