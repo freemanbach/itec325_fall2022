@@ -130,3 +130,5 @@ echo "Range is : " . $range . "\n";
 printf("Population Standard Deviation : %.2f\n", $sd);
 printf("Sample Standard Deviation : %.2f\n", $sampleSD);
 echo "- - - - - - - - - - - - - - - - - - - -\n";
+
+?>
