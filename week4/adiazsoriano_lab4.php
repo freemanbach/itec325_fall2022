@@ -86,7 +86,7 @@ $numArray = array();
 
 do {
     $input = readline("Enter a number(enter 'exit' to stop): ");
-    if(strcmp($input,"exit") != 0) {
+    if(strcmp(strtolower($input),"exit") != 0) {
         if(empty($input) || !is_numeric($input) || intval($input) >= 1_000_000) {
             echo "'" . $input . "' converted to 1.\n";
             $input = 1;
