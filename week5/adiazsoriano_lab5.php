@@ -33,8 +33,6 @@ while($line != null) {
     $line = trim(fgets($file));
 }
 
-$dataArrLen = count($dataArr);
-
 for($i = 15; $i > -15; $i--) {
     $dataArrLen = count($dataArr);
     $randInd = rand(0,$dataArrLen - 1);
