@@ -41,7 +41,7 @@ function getDefinition(string $apiLink, string $word, $context) : array|null {
     $defitionJSON = file_get_contents($apiLink . $word, false, $context); 
     $headerRequestInfo = get_headers($apiLink . $word);
     $definitions = json_decode($defitionJSON);
-    
+
     return strcmp($headerRequestInfo[0], "HTTP/1.1 404 Not Found") == 0 ? null : $definitions;
 }
 
@@ -51,6 +51,7 @@ function printWords(array $wordDefinitions) : void {
     }
 }
 
+//context needed to change how the file content is read in
 $contextOptions = array(
     'http' => array(
         'method' => 'GET',
@@ -64,7 +65,6 @@ $wordArr = fileToStrArray("./define_terms.txt");
 $wordDefinitions = array();
 
 for($i = 0; $i < count($wordArr); $i++) {
-
     $generatedWordDefinition = getDefinition("https://api.dictionaryapi.dev/api/v2/entries/en/",$wordArr[$i], $context);
 
     $wordDefinitions[$wordArr[$i]] = $generatedWordDefinition == null ? 
