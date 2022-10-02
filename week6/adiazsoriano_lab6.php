@@ -65,7 +65,7 @@ $wordArr = fileToStrArray("./define_terms.txt");
 $wordDefinitions = array();
 
 for($i = 0; $i < count($wordArr); $i++) {
-    $generatedWordDefinition = getDefinition("https://api.dictionaryapi.dev/api/v2/entries/en/",$wordArr[$i], $context);
+    $generatedWordDefinition = getDefinition("https://api.dictionaryapi.dev/api/v2/entries/en/", $wordArr[$i], $context);
 
     $wordDefinitions[$wordArr[$i]] = $generatedWordDefinition == null ? 
     "No definitions were found." : $generatedWordDefinition[0]->meanings[0]->definitions[0]->definition;
