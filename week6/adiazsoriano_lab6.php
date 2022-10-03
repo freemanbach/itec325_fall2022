@@ -38,9 +38,9 @@ function fileToStrArray(string $fileName) : array {
 }
 
 function getDefinition(string $apiLink, string $word, $context) : array|null {
-    $defitionJSON = file_get_contents($apiLink . $word, false, $context); 
+    $definitionJSON = file_get_contents($apiLink . $word, false, $context); 
     $headerRequestInfo = get_headers($apiLink . $word);
-    $definitions = json_decode($defitionJSON);
+    $definitions = json_decode($definitionJSON);
 
     return strcmp($headerRequestInfo[0], "HTTP/1.1 404 Not Found") == 0 ? null : $definitions;
 }
