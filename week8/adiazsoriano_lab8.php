@@ -96,7 +96,6 @@ class FileParser {
         }
 
         FileParser::$fileName = $fileStr;
-        var_dump($file);
         return $file;
     }
 }
