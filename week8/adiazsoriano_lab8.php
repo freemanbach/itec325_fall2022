@@ -50,6 +50,7 @@ class FileParser {
                 array_push($tempArr, trim($line));
                 $line = fgets($this->file);
             }
+            
             $tempFileSpl = array();
             foreach($tempArr as $line) {
                 array_push($tempFileSpl, str_split($line));
