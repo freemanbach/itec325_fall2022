@@ -50,7 +50,7 @@ class FileParser {
                 array_push($tempArr, trim($line));
                 $line = fgets($this->file);
             }
-            
+
             $tempFileSpl = array();
             foreach($tempArr as $line) {
                 array_push($tempFileSpl, str_split($line));
@@ -75,7 +75,6 @@ class FileParser {
     public function printFileInfo() : void {
         echo "Printing histogram information about '" . FileParser::$fileName . "'.\n\n";
         if(isset($this->fileInfo) || !empty($this->fileInfo)) {
-
             foreach($this->fileInfo as $key => $value) {
                 echo "[" . $key . "] : " . $value . "\n";
             }
