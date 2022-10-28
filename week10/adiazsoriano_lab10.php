@@ -29,7 +29,9 @@ require "../week9/adiazsoriano_lab9.php";
 
 //Query something
 $q1 = "SELECT * FROM table1;";
-$s1 = $pdo->query($q1); //$s1 contains an associative array of the first row found from this query
+$s1 = $pdo->query($q1); 
+//use $s1->fetchAll(); to get all of the rows of the table (in an associative array).
+$names = $s1->fetch(); ///$names contains an associative array of the first row found from this query
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //all of the things below are using prepared statements.
