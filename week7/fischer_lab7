@@ -1,0 +1,48 @@
+<?php
+/**
+* This sample template is used for your php file upload on weekly submission.
+* There will be a theme on a weekly basis on learning this new Server centric
+* Programming language called PHP. The idea is to write your own unique code
+* to supply as a php file and to check into your local repo aka staging area
+* then to check-in that single file to this github area.
+*
+* This weekly topic will vary from week to week. There couild be examples
+* from lecture on certain native PHP functions, conditional, loopings, along
+* with parsing data to associative array. The idea of this weekly programming task
+* will be your own. I wont be making any contributions to your ideas on this weekly
+* assignment.
+*
+* Typically, there will be CLI tools, which can be run on the terminal environment
+* rather than running it via Apache as a web application. 
+*
+* To execute any PHP script as a CLI, you can run `php filename.php`
+*
+* @Author Chris Fischer
+* @Date   10.27.22
+* @Email  cafischer@Radford.edu
+* @Desc   Checks format of string using regular expressions so that only characters are allowed.
+*/
+
+// Code
+
+//Regular expression format
+$regex = '/^[a-zA-Z ]*$/';
+$replace = '*';
+ 
+// Read in a string
+$word = readline('Enter in Characters, no numbers: ');
+ 
+// Use preg_match() to search string
+if(preg_match($regex, $word)) {
+	//print if proper format
+	echo("The word: " . $word . ", is in the proper format.");
+	}
+
+else {
+	//replaces wrong format with *
+    echo("\n" . "No numbers; Improper format:" . "\n");
+	$word = preg_replace('/\d/', '*', $word);
+	echo $word . "\n";
+}
+
+?>
