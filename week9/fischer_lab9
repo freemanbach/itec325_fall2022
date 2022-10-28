@@ -1,0 +1,57 @@
+<?php
+/**
+* This sample template is used for your php file upload on weekly submission.
+* There will be a theme on a weekly basis on learning this new Server centric
+* Programming language called PHP. The idea is to write your own unique code
+* to supply as a php file and to check into your local repo aka staging area
+* then to check-in that single file to this github area.
+*
+* This weekly topic will vary from week to week. There couild be examples
+* from lecture on certain native PHP functions, conditional, loopings, along
+* with parsing data to associative array. The idea of this weekly programming task
+* will be your own. I wont be making any contributions to your ideas on this weekly
+* assignment.
+*
+* Typically, there will be CLI tools, which can be run on the terminal environment
+* rather than running it via Apache as a web application. 
+*
+* To execute any PHP script as a CLI, you can run `php filename.php`
+*
+* @Author Chris Fischer
+* @Date   10.27.22
+* @Email  cafischer@Radford.edu
+* @Desc   Connects to database and inserts new values to City table
+*/
+
+// Code
+
+//Open Connection
+$connect = mysqli_connect("localhost", "gitLab", "testAccount", "world");
+
+//Check connection
+if (mysqli_connect_errno()) {
+	echo "\n";
+    printf("Connection failed: ", mysqli_connect_error());
+    exit();
+}
+
+//Loads values to insert
+$insertion = "INSERT INTO City (ID, Name, CountryCode, District, Population) VALUES
+            ('123', 'Charlotte', 'CLT', 'North', '105000'),
+            ('456', 'Christiansburg', 'CTB', 'South', '100100'),
+            ('890', 'Roanoke', 'ROA', 'East', '100300'),
+			      ('566', 'Mt Olympus', 'OLY', 'SKY', '18'),
+            ('567', 'Richmond', 'RIC', 'West', '100400')";
+
+//Inserts values into Database
+if(mysqli_query($connect, $insertion)){
+    echo "Records added to the Database successfully.";
+} 
+else{
+    echo "ERROR: $insertion. " . mysqli_error($connect);
+}
+
+//Close connection
+mysqli_close($connect);
+
+?>
